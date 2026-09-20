@@ -1,12 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="128" fill="#09090b"/>
   <defs>
     <linearGradient id="neptuneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#06b6d4" />
-      <stop offset="100%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#a855f7" />
     </linearGradient>
   </defs>
-  <rect width="32" height="32" rx="8" fill="#0a0d14" />
-  <rect x="1" y="1" width="30" height="30" rx="7" fill="none" stroke="url(#neptuneGrad)" stroke-width="1.5" />
-  <text x="16" y="22" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="16" fill="#00e5ff" text-anchor="middle">N</text>
+  
+  <!-- Stylized N -->
+  <path d="M160 380V132H204L312 300V132H352V380H308L200 212V380H160Z" fill="url(#neptuneGrad)"/>
 </svg>
-
