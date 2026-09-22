@@ -1,9 +1,20 @@
 import type { Metadata } from "next";
+import { Space_Grotesk, Inter } from "next/font/google";
 import { ThemeProvider } from "@/context/ThemeContext";
 import "./globals.css";
 
+const spaceGrotesk = Space_Grotesk({ 
+  subsets: ["latin"],
+  variable: "--font-space" 
+});
+
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: "--font-inter" 
+});
+
 export const metadata: Metadata = {
-  title: "Neptune Consulting Services | Technology Consulting + Product Engineering",
+  title: "Neptune | Custom Software & AI Engineering",
   description: "Technology. Strategy. Solutions. Practical AI, custom enterprise software, and scalable cloud product engineering built around your business workflows.",
   keywords: [
     "Neptune Consulting Services",
@@ -32,13 +43,15 @@ export const metadata: Metadata = {
   },
 };
 
+import Chatbot from "@/components/ui/Chatbot";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
+    <html lang="en" className={`dark scroll-smooth ${spaceGrotesk.variable} ${inter.variable}`} suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -58,6 +71,7 @@ export default function RootLayout({
       <body className="font-sans bg-white dark:bg-[#0f131d] text-slate-900 dark:text-[#dfe2f0] antialiased selection:bg-cyan-500/20 selection:text-cyan-600 dark:selection:text-primary transition-colors duration-300">
         <ThemeProvider>
           {children}
+          <Chatbot />
         </ThemeProvider>
       </body>
     </html>

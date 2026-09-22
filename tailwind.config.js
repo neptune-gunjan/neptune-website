@@ -38,7 +38,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-inter)", "Inter", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
-        display: ["var(--font-jakarta)", "'Plus Jakarta Sans'", "sans-serif"],
+        display: ["var(--font-space)", "'Space Grotesk'", "sans-serif"],
       },
       boxShadow: {
         'glow-blue': '0 0 25px rgba(56, 189, 248, 0.25)',
@@ -64,5 +64,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };

@@ -52,41 +52,36 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 4: Quick Links */}
+          {/* Col 4: Sitemap */}
           <div>
             <span className="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider block mb-4">
-              Navigation
+              Sitemap
             </span>
             <ul className="space-y-2.5 text-xs">
               <li>
-                <a href="/#services" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  Solutions
-                </a>
+                <Link href="/" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="/#why-neptune" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  Why Neptune
-                </a>
+                <Link href="/services" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Services
+                </Link>
               </li>
               <li>
-                <a href="/#work" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  Selected Work
-                </a>
+                <Link href="/about" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  About Us
+                </Link>
               </li>
               <li>
-                <a href="/#process" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  How We Work
-                </a>
+                <Link href="/insights" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Blog
+                </Link>
               </li>
               <li>
-                <a href="/#testimonials" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  Client Testimonials
-                </a>
-              </li>
-              <li>
-                <a href="/#contact" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                  Book a Consultation
-                </a>
+                <Link href="/contact" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -118,7 +113,13 @@ export default function Footer() {
             © {company.establishedYear} {company.brandName}. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-slate-900 dark:hover:text-white transition-colors flex items-center gap-1 font-medium">
+            <Link href="/legal/privacy-policy" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/legal/terms" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+              Terms of Service
+            </Link>
+            <a href="#" className="hover:text-slate-900 dark:hover:text-white transition-colors flex items-center gap-1 font-medium ml-4">
               <span>Back to top</span>
               <ArrowUp className="w-3.5 h-3.5" />
             </a>

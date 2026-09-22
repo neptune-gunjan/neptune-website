@@ -79,42 +79,16 @@ export default function WhatWeDo() {
                   {service.description}
                 </p>
 
-                {/* Key Deliverables */}
-                <div className="space-y-2 mb-6 pt-4 border-t border-slate-200/80 dark:border-white/5">
-                  <span className="text-[11px] uppercase tracking-wider font-bold text-slate-400 dark:text-slate-500 block mb-2">
-                    Key Deliverables
-                  </span>
-                  {service.deliverables.map((item) => (
-                    <div key={item} className="flex items-start gap-2 text-xs text-slate-700 dark:text-slate-300">
-                      <CheckCircle2 className="w-4 h-4 text-cyan-600 dark:text-cyan-400 shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </div>
-                  ))}
+                {/* Explore Services Link */}
+                <div className="mt-8 pt-4 border-t border-slate-200/80 dark:border-white/5">
+                  <a
+                    href="/services"
+                    className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-cyan-600 dark:text-cyan-400 group-hover:text-cyan-700 dark:group-hover:text-cyan-300 transition-colors"
+                  >
+                    <span>Explore Services</span>
+                    <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </a>
                 </div>
-              </div>
-
-              <div>
-                {/* Tech Stack Pills */}
-                <div className="flex flex-wrap gap-1.5 mb-6 pt-4 border-t border-slate-200/80 dark:border-white/5">
-                  {service.techStack.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white dark:bg-[#181824] text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-white/5"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Inquire Action Link */}
-                <a
-                  href="#contact"
-                  onClick={() => analytics.trackCtaClick(`Service: ${service.title}`, "services_card")}
-                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-cyan-600 dark:text-cyan-400 group-hover:text-cyan-700 dark:group-hover:text-cyan-300 transition-colors"
-                >
-                  <span>Inquire About This Practice</span>
-                  <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                </a>
               </div>
             </motion.div>
           ))}

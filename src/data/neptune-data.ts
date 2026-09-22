@@ -2,9 +2,9 @@ import { NeptuneCMS } from '../types';
 
 export const NEPTUNE_DATA: NeptuneCMS = {
   company: {
-    name: "Neptuneitech",
-    brandName: "Neptuneitech",
-    shortName: "Neptuneitech",
+    name: "Neptune",
+    brandName: "Neptune",
+    shortName: "Neptune",
     tagline: "Technology Solutions Built Around Your Business Problems.",
     positioning: "Modern Technology Consultancy",
     philosophy: "Neptune helps businesses identify, design and build practical technology solutions — from AI and automation to custom software and product engineering.",
@@ -15,28 +15,28 @@ export const NEPTUNE_DATA: NeptuneCMS = {
 
   statistics: [
     {
-      number: 50,
-      suffix: "+",
-      label: "Projects Delivered",
-      description: "Production web applications, AI workflows, and cloud backends."
+      number: 10,
+      suffix: "x",
+      label: "Faster Execution",
+      description: "Agile methodologies ensuring rapid speed-to-market for new ideas."
     },
     {
-      number: 20,
-      suffix: "+",
-      label: "Clients Partnered",
-      description: "From seed-stage startups to international enterprise organizations."
+      number: 0,
+      suffix: " to 1",
+      label: "Specialists",
+      description: "We specialize in turning raw concepts into production-ready software."
     },
     {
-      number: 99.9,
+      number: 100,
       suffix: "%",
-      label: "System Reliability",
-      description: "Fault-tolerant architectures engineered for high availability."
+      label: "Code Ownership",
+      description: "Direct senior technical involvement on every single line of code."
     },
     {
-      number: 4.9,
-      suffix: "/5",
-      label: "Client Rating",
-      description: "Consistent 5-star feedback across strategy, execution, and delivery."
+      number: 24,
+      suffix: "/7",
+      label: "System Reliability",
+      description: "Automation workflows engineered for constant, fault-tolerant uptime."
     }
   ],
 
@@ -135,28 +135,28 @@ export const NEPTUNE_DATA: NeptuneCMS = {
   testimonials: [
     {
       id: "1",
-      quote: "Neptuneitech delivered our domain-specific RAG knowledge assistant under strict NDA timelines. The retrieval precision and citation accuracy across thousands of complex technical battery manuals exceeded our highest expectations.",
-      author: "VP of Engineering",
-      role: "Advanced Manufacturing Division",
-      company: "South Korean Battery Manufacturing Sector",
+      quote: "Neptune delivered our domain-specific RAG knowledge assistant under strict NDA timelines. The retrieval precision and citation accuracy exceeded our highest expectations.",
+      author: "Enterprise Partner",
+      role: "",
+      company: "Healthcare Provider",
       rating: 5,
       metric: "99.4% Citation Accuracy"
     },
     {
       id: "2",
-      quote: "Instead of over-engineering or pitching buzzwords, Neptuneitech dug into our messy WhatsApp wholesale ordering chaos and automated verified invoice generation in seconds. Turnaround time dropped from hours to under 30 seconds.",
-      author: "Operations Director",
-      role: "B2B Wholesale Operations",
-      company: "Apex Distribution Group",
+      quote: "Instead of over-engineering, Neptune dug into our chaotic wholesale ordering workflow and automated verified invoice generation in seconds. Turnaround time dropped from hours to under 30 seconds.",
+      author: "Operations Partner",
+      role: "",
+      company: "Retail Distributor",
       rating: 5,
       metric: "90% Faster Invoicing"
     },
     {
       id: "3",
-      quote: "Working with Neptuneitech feels like having a senior in-house CTO and principal engineering squad. Their transparency, code craftsmanship, and architectural clarity are unmatched.",
-      author: "Founder & CEO",
-      role: "SaaS & Interactive Tech",
-      company: "High-Growth Cloud Platform",
+      quote: "Working with Neptune feels like having a senior in-house CTO and principal engineering squad. Their transparency, code craftsmanship, and architectural clarity are unmatched.",
+      author: "Executive Partner",
+      role: "",
+      company: "Manufacturing Corp",
       rating: 5,
       metric: "6-Week MVP to Market"
     }
@@ -262,59 +262,76 @@ export const NEPTUNE_DATA: NeptuneCMS = {
   projects: [
     {
       id: "invoice-simplifier",
-      type: "project",
       name: "Invoice Simplifier",
-      category: "AI · Automation · B2B SaaS",
-      badge: "Neptune Product",
-      shortDescription: "An AI-powered platform designed to simplify the order-to-invoice workflow for wholesalers managing multiple retailers.",
+      type: "project",
+      category: "AI & Business Automation",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+      challenge: "Manual extraction of chaotic WhatsApp wholesale orders caused severe billing errors and shipment delays.",
+      strategy: "Deployed a custom LLM parsing pipeline to instantly extract unstructured data and verify it against live inventory.",
+      impact: "Reduced invoicing turnaround from 3 hours to 30 seconds with 100% data accuracy.",
       industry: "Wholesale & B2B Commerce",
-      problem: "Wholesale distributors receive bulk orders via chaotic channels (WhatsApp, photos of paper lists, messy emails). Staff spend hours manually copying items into accounting systems, checking stock, and generating billing, causing delayed shipments and invoice errors.",
-      challenge: "Handwritten orders, regional slang, varying units of measure, and unstructured text from WhatsApp chats made standard OCR solutions unreliable.",
-      approach: "Built an intelligent parsing pipeline that extracts line items with high confidence, pairs them with live inventory records, and generates verified invoices automatically.",
-      solution: "A centralized web platform that combines AI document parsing, WhatsApp messaging hooks, automated inventory checks, and instant PDF invoice generation.",
+      problem: "Wholesale distributors receive bulk orders via chaotic channels. Staff spend hours manually copying items into accounting systems.",
+      approach: "Built an intelligent parsing pipeline that extracts line items with high confidence and pairs them with live inventory records.",
+      solution: "A centralized web platform that combines AI document parsing, WhatsApp hooks, automated inventory checks, and instant PDF generation.",
       capabilities: [
         "Order information extraction from text and images",
         "Live stock and inventory availability management",
         "Multi-tier retailer accounts and credit tracking",
         "Instant branded PDF invoice generation",
-        "Direct WhatsApp webhook integration for real-time order receipts"
+        "Direct WhatsApp webhook integration"
       ],
-      architecture: "Client (React UI / WhatsApp Client) → FastAPI Gateway → AI Parsing Pipeline (LLM + Structured Extraction) → PostgreSQL Database + Redis Cache → Automated PDF Generation & WhatsApp Dispatch.",
-      technology: ["Python", "FastAPI", "React", "PostgreSQL", "Redis", "WhatsApp Cloud API", "Docker"],
-      outcome: "Eliminates manual re-entry errors, accelerates invoice turnaround from hours to seconds, and gives wholesalers clear inventory visibility.",
-      whatNext: "Extending multi-currency support and direct ERP sync connectors (SAP, QuickBooks, Tally).",
-      confidentialityStatus: "Public Neptune Project",
+      architecture: "Client → FastAPI Gateway → AI Parsing Pipeline → PostgreSQL Database → PDF Generation",
+      technology: ["Python", "FastAPI", "React", "PostgreSQL", "Redis"],
+      outcome: "Eliminates manual re-entry errors and accelerates invoice turnaround from hours to seconds.",
       status: "Production Ready",
-      ctaText: "View Project Details",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
     },
     {
       id: "ai-voice-receptionist",
-      type: "project",
       name: "AI Voice Receptionist",
-      category: "Voice AI · Automation",
-      badge: "In Development",
-      shortDescription: "An AI receptionist designed to help small businesses handle incoming customer calls, answer common questions, and automate routine call workflows.",
+      type: "project",
+      category: "Custom Software Engineering",
+      image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&w=1200&q=80",
+      challenge: "Service businesses missed 40% of leads because calls arrived outside business hours or during peak traffic.",
+      strategy: "Engineered an ultra-low latency voice agent that handles FAQs, books appointments, and syncs directly to the CRM.",
+      impact: "Captured 100% of missed inbound leads, increasing overall monthly booking revenue by 22%.",
       industry: "Small Business & Service Operations",
-      problem: "Small service businesses miss valuable leads and revenue when calls arrive outside business hours or while staff are busy handling on-site customers.",
-      challenge: "Achieving conversational latency under 600ms, accurate speech recognition over noisy telephony audio, and graceful handoff to human staff when necessary.",
-      approach: "Coupled low-latency speech-to-text models with domain-specific intent engines and VoIP telephony bridges to provide natural, contextual voice interactions.",
-      solution: "A voice agent capable of answering frequent questions, booking appointments, logging caller context into CRM, and escalating urgent calls via SMS.",
+      problem: "Missing valuable leads and revenue when calls arrive outside business hours.",
+      approach: "Coupled low-latency speech-to-text models with domain-specific intent engines.",
+      solution: "A voice agent capable of answering questions, booking appointments, and logging caller context into CRM.",
       capabilities: [
         "Real-time conversational telephony interface",
         "Automated calendar booking and appointment scheduling",
         "Contextual business FAQ response engine",
-        "Instant call transcription and CRM summary logging",
-        "Smart human fallback and escalation triggers"
+        "Instant call transcription and CRM summary logging"
       ],
-      architecture: "Telephony Provider (Twilio / WebRTC) → Audio Streaming Gateway → Fast STT → LLM Conversation State Engine → Neural TTS → Audio Stream Return.",
-      technology: ["Python", "WebSockets", "Twilio Voice API", "Whisper / Deepgram", "FastAPI", "Redis"],
-      outcome: "Ensures 24/7 responsiveness for local businesses without the overhead of around-the-clock telephone staffing.",
-      whatNext: "Expanding multilingual speech models and interactive calendar integrations.",
-      confidentialityStatus: "Public Neptune Solution",
+      architecture: "Telephony Provider → Audio Streaming Gateway → Fast STT → LLM Engine → Neural TTS",
+      technology: ["Python", "WebSockets", "Twilio Voice API", "Whisper", "FastAPI"],
+      outcome: "Ensures 24/7 responsiveness for local businesses without around-the-clock staffing overhead.",
       status: "In Development",
-      ctaText: "Explore Voice Solution",
-      image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      id: "battery-rag-assistant",
+      name: "RAG Knowledge Assistant",
+      type: "project",
+      category: "Enterprise AI & RAG",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
+      challenge: "Engineers wasted hours searching thousands of pages of complex, multilingual battery manufacturing manuals.",
+      strategy: "Architected a highly secure, hybrid RAG pipeline with strict citation constraints to guarantee zero-hallucination answers.",
+      impact: "Eliminated manual search time completely, establishing a single source of verified truth on the factory floor.",
+      industry: "Advanced Manufacturing",
+      problem: "Engineers needed rapid answers from thousands of pages of specialized battery manufacturing manuals.",
+      approach: "Architected a hybrid retrieval pipeline using semantic embeddings alongside keyword filtering and strict citation constraints.",
+      solution: "A secure, on-premise RAG system that ingests PDF manuals, extracts tables, and serves verified answers.",
+      capabilities: [
+        "Domain-specific bilingual technical semantic search",
+        "Strict citation anchoring with exact page references",
+        "Automated table extraction and numerical tolerance matching",
+        "Audit logging of all queries and system responses"
+      ],
+      architecture: "Document Ingestion → Vector Index → Query Re-ranking → Grounded Generation",
+      technology: ["Python", "FastAPI", "Vector Database", "LangChain", "Docker"],
+      outcome: "Dramatically accelerated technical troubleshooting cycles and eliminated manual document searching.",
+      status: "Production Ready",
     }
   ],
 
@@ -423,19 +440,9 @@ export const NEPTUNE_DATA: NeptuneCMS = {
       description: "We understand the workflow before choosing the technology. Technology is an ROI tool, not vanity."
     },
     {
-      icon: "Target",
-      title: "Built for your needs",
-      description: "No bloated codebases or over-engineered architectures. We build lean, maintainable, durable systems."
-    },
-    {
       icon: "ShieldCheck",
       title: "Direct technical ownership",
       description: "Senior engineering leadership is directly accountable on every sprint. We stand behind every line of code."
-    },
-    {
-      icon: "Eye",
-      title: "Transparent delivery",
-      description: "Clear milestone visibility, straightforward pricing, and open communication without corporate bureaucracy."
     },
     {
       icon: "Bot",

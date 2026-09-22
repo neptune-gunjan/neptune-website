@@ -7,11 +7,13 @@ import { analytics } from "@/lib/analytics";
 import { useTheme } from "@/context/ThemeContext";
 
 const NAV_LINKS = [
-  { label: "Solutions", href: "/#services" },
-  { label: "How We Work", href: "/#process" },
-  { label: "Selected Work", href: "/#work" },
-  { label: "Why Neptune", href: "/#why-neptune" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/services" },
+  { label: "About", href: "/about" },
+  { label: "How we work", href: "/#process" },
+  { label: "Why Us", href: "/#why-neptune" },
+  { label: "Blog", href: "/insights" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -76,11 +78,8 @@ export default function Navbar() {
               </div>
             </div>
             <div className="flex flex-col">
-              <span className="font-display font-extrabold text-lg tracking-tight text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
+              <span className="font-display font-extrabold text-xl tracking-tight text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
                 Neptuneitech
-              </span>
-              <span className="text-[10px] uppercase tracking-widest text-slate-500 dark:text-slate-400 font-semibold">
-                Technology Consultancy
               </span>
             </div>
           </Link>
@@ -100,6 +99,13 @@ export default function Navbar() {
 
           {/* Desktop Right CTA + Theme Toggle */}
           <div className="hidden lg:flex items-center gap-3">
+            <Link
+              href="/portal/login"
+              className="hidden lg:flex items-center gap-2 text-sm font-bold text-slate-700 hover:text-cyan-600 dark:text-slate-300 dark:hover:text-cyan-400 transition-colors px-2"
+            >
+              Client Login
+            </Link>
+
             {/* Theme Toggle Button */}
             <button
               type="button"
@@ -116,7 +122,7 @@ export default function Navbar() {
             </button>
 
             <a
-              href="#contact"
+              href="/contact"
               onClick={() => handleCtaClick("navbar_desktop")}
               className="group relative inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold text-slate-950 dark:text-[#09090b] bg-gradient-to-r from-cyan-400 to-cyan-300 dark:from-cyan-400 dark:to-cyan-300 hover:opacity-95 transition-all duration-300 shadow-md dark:shadow-glow-blue hover:shadow-lg"
             >
@@ -163,7 +169,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="/contact"
               onClick={() => handleCtaClick("navbar_mobile")}
               className="mt-3 flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-gradient-to-r from-cyan-400 to-cyan-300 text-slate-950 font-bold text-sm shadow-md transition-all"
             >

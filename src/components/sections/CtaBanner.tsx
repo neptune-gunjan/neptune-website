@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { ArrowRight, Sparkles, CheckCircle2, ShieldCheck, Zap } from "lucide-react";
 import { analytics } from "@/lib/analytics";
 
@@ -32,14 +33,14 @@ export default function CtaBanner() {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
-              <a
-                href="/#contact"
+              <Link
+                href="/contact"
                 onClick={() => analytics.trackCtaClick("Book a Consultation", "cta_banner")}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full font-bold text-base text-slate-950 bg-gradient-to-r from-cyan-400 via-sky-300 to-cyan-300 hover:opacity-95 transition-all shadow-md dark:shadow-glow-blue hover:shadow-lg"
               >
                 <span>Book a Consultation</span>
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
               <a
                 href="#work"
                 onClick={() => analytics.trackCtaClick("Explore Selected Work", "cta_banner")}

@@ -202,7 +202,7 @@ export default function WorkDetail({ params }: { params: { id: string } }) {
         </div>
         
         <div className="mt-16 text-center">
-          <Link href="/#contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-slate-950 bg-gradient-to-r from-cyan-400 via-sky-300 to-cyan-300 hover:opacity-95 transition-all duration-300 shadow-md">
+          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-slate-950 bg-gradient-to-r from-cyan-400 via-sky-300 to-cyan-300 hover:opacity-95 transition-all duration-300 shadow-md">
             Start a Similar Project <ChevronRight className="w-4 h-4" />
           </Link>
         </div>
