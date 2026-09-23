@@ -453,8 +453,8 @@ export const NEPTUNE_DATA: NeptuneCMS = {
 
   about: {
     whoWeAre: "Neptuneitech is a modern technology consultancy and product engineering company helping ambitious businesses turn operational and technical bottlenecks into scalable digital advantages.",
-    mission: "Make technology simpler, faster, and genuinely more valuable for businesses of every scale.",
-    vision: "Build technology that creates measurable business impact — not unnecessary complexity.",
+    mission: "To eliminate operational bottlenecks by engineering robust, AI-driven digital ecosystems that scale seamlessly, empower teams to move faster, and turn complex data into immediate, actionable business value.",
+    vision: "To become the definitive technology partner for modern enterprises, bridging the gap between cutting-edge artificial intelligence and practical, bulletproof software architecture that drives the next decade of digital transformation.",
     focusAreas: ["Web & Mobile Engineering", "Cloud Architecture", "AI & Business Automation", "Technology Consulting", "DevOps & CI/CD"]
   }
 };

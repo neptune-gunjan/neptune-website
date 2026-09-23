@@ -53,10 +53,11 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
         <div className="mb-4"></div>
 
-        {/* Main Headline: "Technology Solutions Built Around Your Business Problems." */}
+        {/* Main Headline */}
         <motion.h1
           initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight max-w-5xl mx-auto leading-[1.05] mb-6 text-slate-900 dark:text-white"
         >
@@ -67,17 +68,19 @@ export default function Hero() {
         {/* Value Proposition */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="max-w-3xl mx-auto text-lg sm:text-xl md:text-2xl text-slate-600 dark:text-slate-300 font-normal leading-relaxed mb-12"
         >
           {company.philosophy}
         </motion.p>
 
-        {/* Action Buttons: [ Talk to Neptune ] [ Explore Our Work ] */}
+        {/* Action Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
         >
@@ -101,7 +104,8 @@ export default function Hero() {
         {/* Capability Line */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.35 }}
           className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base font-medium text-slate-500 dark:text-slate-400 mb-16"
         >
@@ -113,30 +117,34 @@ export default function Hero() {
           <span className="text-slate-300 dark:text-slate-700">•</span>
           <span>Technology Consulting</span>
         </motion.div>
-
-        {/* Animated Statistics Counter Bar */}
+        {/* Client Marquee */}
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto pt-8 border-t border-slate-200/80 dark:border-white/10"
+          className="w-full pt-12 border-t border-slate-200/50 dark:border-white/5"
         >
-          {statistics.map((stat) => (
-            <div
-              key={stat.label}
-              className="p-5 rounded-2xl bg-slate-50/80 dark:bg-[#111116]/80 border border-slate-200/80 dark:border-white/10 shadow-card-light dark:shadow-none hover-lift text-center"
-            >
-              <div className="font-display font-black text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500 mb-1">
-                <Counter target={stat.number} suffix={stat.suffix} />
-              </div>
-              <div className="font-bold text-sm text-slate-900 dark:text-white mb-1">
-                {stat.label}
-              </div>
-              <div className="text-xs text-slate-500 dark:text-slate-400 leading-tight">
-                {stat.description}
-              </div>
+          <p className="text-xs sm:text-sm font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-8">
+            Trusted by Engineering Teams At
+          </p>
+          <div className="flex overflow-hidden space-x-12 sm:space-x-16 max-w-5xl mx-auto mask-image-fade">
+            <div className="flex space-x-12 sm:space-x-16 animate-marquee shrink-0 items-center">
+              {NEPTUNE_DATA.trustedClients.map((client, idx) => (
+                <div key={idx} className="text-lg sm:text-xl font-display font-black text-slate-400 dark:text-slate-600 hover:text-slate-900 dark:hover:text-slate-300 transition-colors whitespace-nowrap">
+                  {client.name}
+                </div>
+              ))}
             </div>
-          ))}
+            {/* Duplicate for infinite effect */}
+            <div className="flex space-x-12 sm:space-x-16 animate-marquee shrink-0 items-center">
+              {NEPTUNE_DATA.trustedClients.map((client, idx) => (
+                <div key={`dup-${idx}`} className="text-lg sm:text-xl font-display font-black text-slate-400 dark:text-slate-600 hover:text-slate-900 dark:hover:text-slate-300 transition-colors whitespace-nowrap">
+                  {client.name}
+                </div>
+              ))}
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

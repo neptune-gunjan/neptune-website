@@ -26,7 +26,7 @@ export default function ProjectsAndCaseStudies() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -54,31 +54,14 @@ export default function ProjectsAndCaseStudies() {
                 </div>
               </div>
               
-              <div className="p-8 flex flex-col flex-grow">
-                <div className="space-y-6 flex-grow">
-                  <div>
-                    <h4 className="text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-2">Challenge</h4>
-                    <p className="text-sm text-slate-700 dark:text-slate-300 font-medium leading-relaxed">{(project as any).challenge}</p>
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-2">Strategy</h4>
-                    <p className="text-sm text-slate-700 dark:text-slate-300 font-medium leading-relaxed">{(project as any).strategy}</p>
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold uppercase tracking-widest text-cyan-600 dark:text-cyan-400 mb-2">Business Impact</h4>
-                    <p className="text-sm text-slate-900 dark:text-white font-bold leading-relaxed">{(project as any).impact}</p>
-                  </div>
-                </div>
-
-                <div className="mt-8 pt-6 border-t border-slate-100 dark:border-white/10">
-                  <Link
-                    href={`/work/${project.id}`}
-                    className="inline-flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors group/link"
-                  >
-                    <span>View Project Details</span>
-                    <ArrowUpRight className="w-4 h-4 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
-                  </Link>
-                </div>
+              <div className="px-8 py-6">
+                <Link
+                  href={`/work/${project.id}`}
+                  className="inline-flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors group/link"
+                >
+                  <span>View Project Details</span>
+                  <ArrowUpRight className="w-4 h-4 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+                </Link>
               </div>
             </motion.div>
           ))}

@@ -22,14 +22,20 @@ export default function OurProcess() {
             {company.lifecycle}
           </p>
           <p className="text-sm sm:text-base text-slate-500 dark:text-slate-400">
-            A battle-tested 6-phase engineering methodology guaranteeing architectural clarity, predictable timelines, and zero surprise debt.
+            A simple, proven 6-step process that ensures clear communication, on-time delivery, and high-quality results without any hidden surprises.
           </p>
         </div>
 
         {/* Desktop Process Stepper (Horizontal Layout for Large Screens) */}
         <div className="hidden lg:block relative mb-12">
-          {/* Connecting Gradient Line */}
-          <div className="absolute top-7 left-10 right-10 h-0.5 bg-gradient-to-r from-cyan-500 via-sky-400 to-purple-600 z-0 opacity-40 dark:opacity-60" />
+          {/* Connecting Gradient Line with Animated Glow */}
+          <div className="absolute top-7 left-10 right-10 h-[2px] bg-slate-200 dark:bg-white/10 z-0 overflow-hidden rounded-full">
+            <motion.div 
+              className="h-full w-1/3 bg-gradient-to-r from-transparent via-cyan-500 to-purple-600"
+              animate={{ x: ["-100%", "400%"] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+            />
+          </div>
 
           <div className="grid grid-cols-6 gap-6 relative z-10">
             {processPhases.map((phase, index) => (
@@ -82,7 +88,15 @@ export default function OurProcess() {
         </div>
 
         {/* Mobile & Tablet Process Stepper (Vertical Timeline) */}
-        <div className="lg:hidden relative pl-6 border-l-2 border-cyan-500/30 dark:border-cyan-400/30 space-y-8 ml-4">
+        <div className="lg:hidden relative pl-8 space-y-8 ml-2">
+          {/* Vertical Connecting Line with Glow */}
+          <div className="absolute top-4 bottom-4 left-2 w-[2px] bg-slate-200 dark:bg-white/10 rounded-full overflow-hidden">
+            <motion.div 
+              className="w-full h-1/3 bg-gradient-to-b from-transparent via-cyan-500 to-purple-600"
+              animate={{ y: ["-100%", "400%"] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+            />
+          </div>
           {processPhases.map((phase, index) => (
             <motion.div
               key={phase.number}
@@ -93,7 +107,7 @@ export default function OurProcess() {
               className="relative"
             >
               {/* Timeline Node Dot */}
-              <div className="absolute -left-[35px] top-6 w-8 h-8 rounded-xl bg-white dark:bg-[#14141e] border-2 border-cyan-500 dark:border-cyan-400 flex items-center justify-center shadow-sm">
+              <div className="absolute -left-[39px] top-6 w-8 h-8 rounded-xl bg-white dark:bg-[#14141e] border-2 border-cyan-500 dark:border-cyan-400 flex items-center justify-center shadow-sm z-10">
                 <span className="font-mono text-xs font-bold text-cyan-600 dark:text-cyan-300">
                   {phase.number}
                 </span>

@@ -44,9 +44,9 @@ export default function Footer() {
             <ul className="space-y-2.5 text-xs">
               {coreServices.map((service) => (
                 <li key={service.id}>
-                  <a href="#services" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  <Link href="/services" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
                     {service.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

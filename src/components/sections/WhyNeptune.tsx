@@ -1,5 +1,5 @@
 "use client";
-
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Compass, Target, ShieldCheck, Eye, Flame, Sparkles } from "lucide-react";
 import { NEPTUNE_DATA } from "@/data/neptune-data";
@@ -11,6 +11,37 @@ const PILLAR_ICONS: Record<string, React.ReactNode> = {
   Eye: <Eye className="w-6 h-6 text-sky-500 dark:text-sky-400" />,
   Flame: <Flame className="w-6 h-6 text-amber-500 dark:text-amber-400" />,
 };
+
+function Counter({ target, suffix = "", duration = 1.8 }: { target: number; suffix?: string; duration?: number }) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    const isDecimal = target % 1 !== 0;
+    const totalSteps = 60;
+    const stepTime = (duration * 1000) / totalSteps;
+    const increment = target / totalSteps;
+
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= target) {
+        setCount(target);
+        clearInterval(timer);
+      } else {
+        setCount(isDecimal ? parseFloat(start.toFixed(1)) : Math.floor(start));
+      }
+    }, stepTime);
+
+    return () => clearInterval(timer);
+  }, [target, duration]);
+
+  return (
+    <span>
+      {count}
+      {suffix}
+    </span>
+  );
+}
 
 export default function WhyNeptune() {
   const { whyNeptune } = NEPTUNE_DATA;
@@ -54,6 +85,32 @@ export default function WhyNeptune() {
             </motion.div>
           ))}
         </div>
+
+        {/* Animated Statistics Counter Bar */}
+        <motion.div
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-16 border-t border-slate-200/80 dark:border-white/10"
+        >
+          {NEPTUNE_DATA.statistics.map((stat) => (
+            <div
+              key={stat.label}
+              className="p-5 rounded-2xl bg-white dark:bg-[#14141e] border border-slate-200/80 dark:border-white/10 shadow-sm text-center group hover:border-cyan-500/30 transition-colors"
+            >
+              <div className="font-display font-black text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500 mb-1 group-hover:scale-105 transition-transform">
+                <Counter target={stat.number} suffix={stat.suffix} />
+              </div>
+              <div className="font-bold text-sm text-slate-900 dark:text-white mb-1">
+                {stat.label}
+              </div>
+              <div className="text-xs text-slate-500 dark:text-slate-400 leading-tight">
+                {stat.description}
+              </div>
+            </div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
