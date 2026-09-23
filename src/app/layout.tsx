@@ -14,10 +14,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Neptune | Custom Software & AI Engineering",
+  metadataBase: new URL('https://neptuneitech.com'),
+  title: "NeptuneItech | Custom Software & AI Engineering",
   description: "Technology. Strategy. Solutions. Practical AI, custom enterprise software, and scalable cloud product engineering built around your business workflows.",
   keywords: [
-    "Neptune Consulting Services",
+    "NeptuneItech",
     "AI Automation",
     "Product Engineering",
     "Custom Software Development",
@@ -25,18 +26,18 @@ export const metadata: Metadata = {
     "Enterprise RAG",
     "SaaS Architecture"
   ],
-  authors: [{ name: "Neptune Consulting Services" }],
+  authors: [{ name: "NeptuneItech" }],
   openGraph: {
-    title: "Neptune Consulting Services | Technology Consulting + Product Engineering",
+    title: "NeptuneItech | Technology Consulting + Product Engineering",
     description: "We don't start with technology. We start with the problem. Explore practical AI, enterprise RAG, and custom software solutions.",
     type: "website",
     locale: "en_US",
-    siteName: "Neptune Consulting Services",
+    siteName: "NeptuneItech",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Neptune Consulting Services",
-    description: "Technology Consulting + Product Engineering. Understand → Design → Build → Deploy → Scale.",
+    title: "NeptuneItech | Custom Software & AI Engineering",
+    description: "Technology Consulting + Product Engineering. From concept to production.",
   },
   icons: {
     icon: "/favicon.svg",

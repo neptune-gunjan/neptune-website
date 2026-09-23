@@ -19,8 +19,9 @@ export default function Footer() {
                   </span>
                 </div>
               </div>
-              <span className="font-display font-bold text-xl text-slate-900 dark:text-white">
-                {company.brandName}
+              <span className="font-display font-black text-xl tracking-tight">
+                <span className="text-slate-900 dark:text-white">Neptune</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-indigo-500">Itech</span>
               </span>
             </div>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-sm leading-relaxed">

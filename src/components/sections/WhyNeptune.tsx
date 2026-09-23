@@ -54,7 +54,7 @@ export default function WhyNeptune() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
-            Why Partner with <span className="text-gradient-cyan-blue">Neptuneitech</span>?
+            Why Partner with <span className="text-gradient-cyan-blue">Neptune</span>?
           </h2>
           <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
             Pragmatic, outcome-focused engineering. We prioritize business value over technical vanity and build systems designed to endure.

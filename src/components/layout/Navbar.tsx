@@ -78,8 +78,9 @@ export default function Navbar() {
               </div>
             </div>
             <div className="flex flex-col">
-              <span className="font-display font-extrabold text-xl tracking-tight text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
-                Neptuneitech
+              <span className="font-display font-black text-xl tracking-tight">
+                <span className="text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">Neptune</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-indigo-500">Itech</span>
               </span>
             </div>
           </Link>

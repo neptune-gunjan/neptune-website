@@ -2,9 +2,9 @@ import { NeptuneCMS } from '../types';
 
 export const NEPTUNE_DATA: NeptuneCMS = {
   company: {
-    name: "Neptune",
-    brandName: "Neptune",
-    shortName: "Neptune",
+    name: "NeptuneItech",
+    brandName: "NeptuneItech",
+    shortName: "NeptuneItech",
     tagline: "Technology Solutions Built Around Your Business Problems.",
     positioning: "Modern Technology Consultancy",
     philosophy: "Neptune helps businesses identify, design and build practical technology solutions — from AI and automation to custom software and product engineering.",
@@ -452,7 +452,7 @@ export const NEPTUNE_DATA: NeptuneCMS = {
   ],
 
   about: {
-    whoWeAre: "Neptuneitech is a modern technology consultancy and product engineering company helping ambitious businesses turn operational and technical bottlenecks into scalable digital advantages.",
+    whoWeAre: "NeptuneItech is a modern technology consultancy and product engineering company helping ambitious businesses turn operational and technical bottlenecks into scalable digital advantages.",
     mission: "To eliminate operational bottlenecks by engineering robust, AI-driven digital ecosystems that scale seamlessly, empower teams to move faster, and turn complex data into immediate, actionable business value.",
     vision: "To become the definitive technology partner for modern enterprises, bridging the gap between cutting-edge artificial intelligence and practical, bulletproof software architecture that drives the next decade of digital transformation.",
     focusAreas: ["Web & Mobile Engineering", "Cloud Architecture", "AI & Business Automation", "Technology Consulting", "DevOps & CI/CD", "Data & Analytics"]
