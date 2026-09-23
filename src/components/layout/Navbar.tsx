@@ -84,27 +84,28 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-7">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors duration-200"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
+          {/* Desktop Navigation & Theme Toggle */}
+          <div className="hidden lg:flex items-center gap-6 ml-auto">
+            <nav className="flex items-center gap-7 mr-2">
+              {NAV_LINKS.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-200"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
 
-          {/* Desktop Right CTA + Theme Toggle */}
-          <div className="hidden lg:flex items-center gap-3">
+            {/* Vertical Divider */}
+            <div className="w-px h-5 bg-slate-200 dark:bg-white/10" />
 
             {/* Theme Toggle Button */}
             <button
               type="button"
               onClick={toggleTheme}
-              className="p-2.5 rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-white/5 dark:hover:bg-white/10 text-slate-700 dark:text-amber-300 border border-slate-200 dark:border-white/10 transition-all focus:outline-none"
+              className="p-2.5 rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-white/5 dark:hover:bg-white/10 text-slate-700 dark:text-amber-300 border border-slate-200 dark:border-white/10 transition-all focus:outline-none ml-2"
               title={theme === "dark" ? "Switch to Modern Light Theme" : "Switch to Dark Theme"}
               aria-label="Toggle theme"
             >
@@ -114,15 +115,6 @@ export default function Navbar() {
                 <Moon className="w-4 h-4" />
               )}
             </button>
-
-            <a
-              href="/contact"
-              onClick={() => handleCtaClick("navbar_desktop")}
-              className="group relative inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold text-slate-950 dark:text-[#09090b] bg-gradient-to-r from-cyan-400 to-cyan-300 dark:from-cyan-400 dark:to-cyan-300 hover:opacity-95 transition-all duration-300 shadow-md dark:shadow-glow-blue hover:shadow-lg"
-            >
-              <span>Book a Consultation</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-            </a>
           </div>
 
           {/* Mobile Menu Button + Theme Toggle */}

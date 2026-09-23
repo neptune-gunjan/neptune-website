@@ -145,6 +145,7 @@ export default function AboutPage() {
                   case "AI & Business Automation": return "Intelligent workflows that eliminate manual friction and accelerate operational velocity.";
                   case "Technology Consulting": return "Strategic technical guidance to mitigate risk, optimize architecture, and reduce debt.";
                   case "DevOps & CI/CD": return "Automated delivery pipelines ensuring rapid, safe, and continuous production releases.";
+                  case "Data & Analytics": return "Structuring unstructured business data into clear, queryable analytics for actionable insights.";
                   default: return "Deep technical expertise to solve complex engineering challenges.";
                 }
               };
@@ -156,7 +157,7 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: idx * 0.1 }}
-                  className={`flex flex-col justify-between p-8 rounded-3xl bg-white dark:bg-[#12121a] border border-slate-200/80 dark:border-white/5 shadow-sm hover:shadow-xl dark:hover:shadow-glow-blue transition-all duration-300 hover:border-cyan-500/30 group ${idx === 0 || idx === 3 ? 'lg:col-span-2' : ''}`}
+                  className={`flex flex-col justify-between p-8 rounded-3xl bg-white dark:bg-[#12121a] border border-slate-200/80 dark:border-white/5 shadow-sm hover:shadow-xl dark:hover:shadow-glow-blue transition-all duration-300 hover:border-cyan-500/30 group ${idx === 0 || idx === 3 || idx === 4 ? 'lg:col-span-2' : ''}`}
                 >
                   <div>
                     <div className="flex items-center gap-4 mb-6">
