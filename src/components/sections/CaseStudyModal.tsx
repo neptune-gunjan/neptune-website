@@ -244,7 +244,7 @@ export default function CaseStudyModal({ item, isOpen, onClose }: CaseStudyModal
                   Core Features
                 </span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {project.capabilities.map((cap) => (
+                  {project.capabilities?.map((cap) => (
                     <div key={cap} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-[#dfe2f0]">
                       <CheckCircle2 className="w-4 h-4 text-cyan-600 dark:text-primary shrink-0 mt-0.5" />
                       <span>{cap}</span>
@@ -255,7 +255,7 @@ export default function CaseStudyModal({ item, isOpen, onClose }: CaseStudyModal
 
               {/* Tech Stack */}
               <div className="flex flex-wrap gap-2 pt-4">
-                {project.technology.map((tech) => (
+                {project.technology?.map((tech) => (
                   <span
                     key={tech}
                     className="px-3 py-1 rounded-full text-xs font-mono bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-800 dark:text-white"

@@ -61,7 +61,7 @@ export default function WorkDetail({ params }: { params: { id: string } }) {
       <section className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto mb-20">
         <div className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden border border-slate-200 dark:border-white/10 shadow-2xl">
           <Image
-            src={item.image}
+            src={item.image as string || "/placeholder-image.jpg"}
             alt={item.name}
             fill
             unoptimized
@@ -166,7 +166,7 @@ export default function WorkDetail({ params }: { params: { id: string } }) {
               <div className="bg-slate-50 dark:bg-[#12121a] rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-white/5">
                 <h3 className="font-bold text-slate-900 dark:text-white mb-4">Core Capabilities Delivered</h3>
                 <ul className="space-y-3">
-                  {project?.capabilities.map((cap, i) => (
+                  {project?.capabilities?.map((cap, i) => (
                     <li key={i} className="flex items-start gap-3 text-slate-700 dark:text-slate-300">
                       <CheckCircle2 className="w-5 h-5 text-cyan-500 shrink-0 mt-0.5" />
                       <span>{cap}</span>

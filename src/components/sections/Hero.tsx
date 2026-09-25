@@ -41,16 +41,16 @@ export default function Hero() {
   const { company, statistics } = NEPTUNE_DATA;
 
   return (
-    <section className="relative min-h-[92vh] pt-36 pb-24 flex items-center justify-center overflow-hidden bg-white dark:bg-[#09090b] transition-colors duration-300">
+    <section className="relative min-h-[92vh] pt-28 sm:pt-36 pb-20 sm:pb-24 flex items-center justify-center overflow-hidden bg-white dark:bg-[#09090b] transition-colors duration-300">
       {/* Background Animated Aurora & Subtle Grid */}
       <div className="absolute inset-0 bg-grid-pattern pointer-events-none opacity-60 dark:opacity-40" />
 
       {/* Aurora Glow Orbs */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[550px] bg-gradient-to-tr from-cyan-500/15 via-indigo-500/15 to-purple-600/15 rounded-full blur-3xl pointer-events-none animate-aurora" />
-      <div className="absolute top-1/3 -left-20 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl pointer-events-none animate-pulse-glow" />
-      <div className="absolute bottom-20 -right-20 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[700px] h-[300px] sm:h-[550px] bg-gradient-to-tr from-cyan-500/15 via-indigo-500/15 to-purple-600/15 rounded-full blur-3xl pointer-events-none animate-aurora" />
+      <div className="absolute top-1/3 -left-20 w-64 sm:w-96 h-64 sm:h-96 bg-cyan-400/10 rounded-full blur-3xl pointer-events-none animate-pulse-glow" />
+      <div className="absolute bottom-20 -right-20 w-64 sm:w-96 h-64 sm:h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
         <div className="mb-4"></div>
 
         {/* Main Headline */}
@@ -59,10 +59,10 @@ export default function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight max-w-5xl mx-auto leading-[1.05] mb-6 text-slate-900 dark:text-white"
+          className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight max-w-5xl mx-auto leading-tight sm:leading-[1.05] mb-6 text-slate-900 dark:text-white"
         >
-          <span>Technology Solutions Built Around Your </span>
-          <span className="text-gradient-aurora">Business Problems.</span>
+          <span className="block sm:inline">Technology Solutions Built Around Your </span>
+          <span className="text-gradient-aurora block sm:inline mt-2 sm:mt-0">Business Problems.</span>
         </motion.h1>
 
         {/* Value Proposition */}
@@ -107,15 +107,23 @@ export default function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.35 }}
-          className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base font-medium text-slate-500 dark:text-slate-400 mb-16"
+          className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base font-medium text-slate-500 dark:text-slate-400 mb-16"
         >
-          <span>AI & Automation</span>
-          <span className="text-slate-300 dark:text-slate-700">•</span>
-          <span>Custom Software</span>
-          <span className="text-slate-300 dark:text-slate-700">•</span>
-          <span>Product Engineering</span>
-          <span className="text-slate-300 dark:text-slate-700">•</span>
-          <span>Technology Consulting</span>
+          <div className="flex items-center gap-2 sm:gap-3">
+            <span>AI & Automation</span>
+            <span className="text-slate-300 dark:text-slate-700 hidden sm:inline">•</span>
+          </div>
+          <div className="flex items-center gap-2 sm:gap-3">
+            <span>Custom Software</span>
+            <span className="text-slate-300 dark:text-slate-700 hidden sm:inline">•</span>
+          </div>
+          <div className="flex items-center gap-2 sm:gap-3">
+            <span>Product Engineering</span>
+            <span className="text-slate-300 dark:text-slate-700 hidden sm:inline">•</span>
+          </div>
+          <div className="flex items-center gap-2 sm:gap-3">
+            <span>Technology Consulting</span>
+          </div>
         </motion.div>
         {/* Client Marquee */}
         <motion.div

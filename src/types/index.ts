@@ -59,22 +59,24 @@ export interface Project {
   type: 'project';
   name: string;
   category: string;
-  badge: string;
-  shortDescription: string;
-  industry: string;
-  problem: string;
-  challenge: string;
-  approach: string;
-  solution: string;
-  capabilities: string[];
-  architecture: string;
-  technology: string[];
-  outcome: string;
-  whatNext: string;
-  confidentialityStatus: string;
-  status: string;
-  ctaText: string;
-  image: string;
+  badge?: string;
+  shortDescription?: string;
+  industry?: string;
+  problem?: string;
+  challenge?: string;
+  strategy?: string;
+  impact?: string;
+  approach?: string;
+  solution?: string;
+  capabilities?: string[];
+  architecture?: string;
+  technology?: string[];
+  outcome?: string;
+  whatNext?: string;
+  confidentialityStatus?: string;
+  status?: string;
+  ctaText?: string;
+  image?: string;
 }
 
 export interface CaseStudyArchitectureStep {
