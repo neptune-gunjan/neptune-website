@@ -1,5 +1,5 @@
 /**
- * Neptune Consulting Services - Analytics & Conversion Tracking
+ * NaptuneTech - Analytics & Conversion Tracking
  * Section 14 Developer Specification
  * Supports Google Analytics (gtag), Google Search Console, and local event telemetry
  */
@@ -32,8 +32,8 @@ class AnalyticsManager {
       if (typeof window.gtag === "function") {
         window.gtag("event", eventName, params);
       }
-      window.dispatchEvent(new CustomEvent("neptune:analytics", { detail: payload }));
-      console.log(`[Neptune Analytics] Tracked: ${eventName}`, params);
+      window.dispatchEvent(new CustomEvent("naptune:analytics", { detail: payload }));
+      console.log(`[NaptuneTech Analytics] Tracked: ${eventName}`, params);
     }
   }
 

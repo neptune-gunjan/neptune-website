@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUp, Mail, Shield, Sparkles } from "lucide-react";
 import { NEPTUNE_DATA } from "@/data/neptune-data";
 
@@ -12,16 +13,18 @@ export default function Footer() {
           {/* Col 1 & 2: Brand Info */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-600 p-[1.5px] shadow-sm">
-                <div className="w-full h-full bg-white dark:bg-[#09090b] rounded-[10px] flex items-center justify-center">
-                  <span className="font-display font-black text-xl text-transparent bg-clip-text bg-gradient-to-tr from-cyan-500 to-purple-500">
-                    N
-                  </span>
-                </div>
+              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-sm bg-white p-0.5 border border-slate-200/80 dark:border-white/10 flex items-center justify-center">
+                <Image
+                  src="/logo.png"
+                  alt="NaptuneTech Logo"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="font-display font-black text-xl tracking-tight">
-                <span className="text-slate-900 dark:text-white">Neptune</span>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-indigo-500">Itech</span>
+                <span className="text-slate-900 dark:text-white">Naptune</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600">Tech</span>
               </span>
             </div>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-sm leading-relaxed">

@@ -3,7 +3,7 @@
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* vietnamese */
 @font-face {
-  font-family: '__Space_Grotesk_dd5b2f';
+  font-family: '__Space_Grotesk_c219ed';
   font-style: normal;
   font-weight: 300 700;
   font-display: swap;
@@ -12,24 +12,24 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Space_Grotesk_dd5b2f';
+  font-family: '__Space_Grotesk_c219ed';
   font-style: normal;
   font-weight: 300 700;
   font-display: swap;
   src: url(/_next/static/media/b7387a63dd068245-s.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: '__Space_Grotesk_dd5b2f';
+  font-family: '__Space_Grotesk_c219ed';
   font-style: normal;
   font-weight: 300 700;
   font-display: swap;
   src: url(/_next/static/media/36966cca54120369-s.p.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__Space_Grotesk_Fallback_dd5b2f';src: local("Arial");ascent-override: 89.71%;descent-override: 26.62%;line-gap-override: 0.00%;size-adjust: 109.69%
-}.__className_dd5b2f {font-family: '__Space_Grotesk_dd5b2f', '__Space_Grotesk_Fallback_dd5b2f';font-style: normal
-}.__variable_dd5b2f {--font-space: '__Space_Grotesk_dd5b2f', '__Space_Grotesk_Fallback_dd5b2f'
+}@font-face {font-family: '__Space_Grotesk_Fallback_c219ed';src: local("Arial");ascent-override: 89.71%;descent-override: 26.62%;line-gap-override: 0.00%;size-adjust: 109.69%
+}.__className_c219ed {font-family: '__Space_Grotesk_c219ed', '__Space_Grotesk_Fallback_c219ed';font-style: normal
+}.__variable_c219ed {--font-space: '__Space_Grotesk_c219ed', '__Space_Grotesk_Fallback_c219ed'
 }
 
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -37,7 +37,7 @@
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Inter_f367f3';
+  font-family: '__Inter_d8ebd1';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -46,7 +46,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Inter_f367f3';
+  font-family: '__Inter_d8ebd1';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -55,7 +55,7 @@
 }
 /* greek-ext */
 @font-face {
-  font-family: '__Inter_f367f3';
+  font-family: '__Inter_d8ebd1';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -64,7 +64,7 @@
 }
 /* greek */
 @font-face {
-  font-family: '__Inter_f367f3';
+  font-family: '__Inter_d8ebd1';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -73,7 +73,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Inter_f367f3';
+  font-family: '__Inter_d8ebd1';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -82,24 +82,24 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Inter_f367f3';
+  font-family: '__Inter_d8ebd1';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
   src: url(/_next/static/media/8e9860b6e62d6359-s.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: '__Inter_f367f3';
+  font-family: '__Inter_d8ebd1';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
   src: url(/_next/static/media/e4af272ccee01ff0-s.p.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__Inter_Fallback_f367f3';src: local("Arial");ascent-override: 90.49%;descent-override: 22.56%;line-gap-override: 0.00%;size-adjust: 107.06%
-}.__className_f367f3 {font-family: '__Inter_f367f3', '__Inter_Fallback_f367f3';font-style: normal
-}.__variable_f367f3 {--font-inter: '__Inter_f367f3', '__Inter_Fallback_f367f3'
+}@font-face {font-family: '__Inter_Fallback_d8ebd1';src: local("Arial");ascent-override: 90.49%;descent-override: 22.56%;line-gap-override: 0.00%;size-adjust: 107.06%
+}.__className_d8ebd1 {font-family: '__Inter_d8ebd1', '__Inter_Fallback_d8ebd1';font-style: normal
+}.__variable_d8ebd1 {--font-inter: '__Inter_d8ebd1', '__Inter_Fallback_d8ebd1'
 }
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
@@ -2016,9 +2016,6 @@ video {
 .rounded-3xl {
   border-radius: 1.5rem;
 }
-.rounded-\[10px\] {
-  border-radius: 10px;
-}
 .rounded-\[14px\] {
   border-radius: 14px;
 }
@@ -2388,9 +2385,16 @@ video {
 .fill-amber-400 {
   fill: #fbbf24;
 }
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.p-0\.5 {
+  padding: 0.125rem;
 }
 .p-10 {
   padding: 2.5rem;
@@ -2421,9 +2425,6 @@ video {
 }
 .p-8 {
   padding: 2rem;
-}
-.p-\[1\.5px\] {
-  padding: 1.5px;
 }
 .p-\[2px\] {
   padding: 2px;
@@ -3875,9 +3876,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   --tw-text-opacity: 1;
   color: rgb(56 189 248 / var(--tw-text-opacity, 1));
 }
-.group:hover .dark\:group-hover\:shadow-glow-aurora:is(.dark *) {
-  --tw-shadow: 0 0 35px rgba(56, 189, 248, 0.2), 0 0 60px rgba(168, 85, 247, 0.15);
-  --tw-shadow-colored: 0 0 35px var(--tw-shadow-color), 0 0 60px var(--tw-shadow-color);
+.group:hover .dark\:group-hover\:shadow-glow-blue:is(.dark *) {
+  --tw-shadow: 0 0 25px rgba(56, 189, 248, 0.25);
+  --tw-shadow-colored: 0 0 25px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .dark\:prose-p\:text-slate-400 :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))):is(.dark *) {

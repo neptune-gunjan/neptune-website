@@ -11,7 +11,7 @@ export const INSIGHTS_DATA: InsightPost[] = [
 
 For the past two years, Artificial Intelligence has dominated headlines. However, most companies are still stuck in the "hype" phase, paying for generic AI wrappers that don't fundamentally change how their business operates. 
 
-At Neptune Consulting, we believe the true value of AI lies in **invisible automation**.
+At NaptuneTech, we believe the true value of AI lies in **invisible automation**.
 
 ### What is Invisible Automation?
 
@@ -32,7 +32,7 @@ Our internal data shows that companies relying on manual data entry for operatio
     date: "2023-11-15",
     readTime: "4 min read",
     author: {
-      name: "Neptune Engineering",
+      name: "NaptuneTech Engineering",
       role: "Technical Team",
     },
     category: "AI Automation",
@@ -61,12 +61,12 @@ However, as a company scales and develops highly proprietary workflows, standard
 
 Building custom software is a larger upfront investment, but the TCO (Total Cost of Ownership) flips in your favor over a 3-5 year horizon. Furthermore, custom software becomes a proprietary asset that increases your company's valuation. 
 
-At Neptune, we specialize in building scalable, secure, and hyper-customized operational software that fits your exact business logic.
+At NaptuneTech, we specialize in building scalable, secure, and hyper-customized operational software that fits your exact business logic.
     `,
     date: "2023-11-20",
     readTime: "5 min read",
     author: {
-      name: "Neptune Strategy",
+      name: "NaptuneTech Strategy",
       role: "Consulting Team",
     },
     category: "Product Engineering",

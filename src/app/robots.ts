@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://neptuneitech.com/sitemap.xml',
+    sitemap: 'https://naptunetech.com/sitemap.xml',
   }
 }
 

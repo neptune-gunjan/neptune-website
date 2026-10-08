@@ -70,7 +70,7 @@ export default function Chatbot() {
                   <Sparkles className="w-4 h-4" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-sm">Neptune AI Assistant</h3>
+                  <h3 className="font-bold text-sm">NaptuneTech AI Assistant</h3>
                   <p className="text-[10px] text-cyan-100 opacity-90">Usually responds instantly</p>
                 </div>
               </div>
@@ -134,7 +134,7 @@ export default function Chatbot() {
                 </button>
               </div>
               <div className="text-center mt-2">
-                <span className="text-[9px] text-slate-400 font-medium">Powered by Neptune AI Automation</span>
+                <span className="text-[9px] text-slate-400 font-medium">Powered by NaptuneTech AI Automation</span>
               </div>
             </form>
           </motion.div>

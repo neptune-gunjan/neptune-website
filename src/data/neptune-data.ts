@@ -2,14 +2,14 @@ import { NeptuneCMS } from '../types';
 
 export const NEPTUNE_DATA: NeptuneCMS = {
   company: {
-    name: "NeptuneItech",
-    brandName: "NeptuneItech",
-    shortName: "NeptuneItech",
-    tagline: "Technology Solutions Built Around Your Business Problems.",
+    name: "NaptuneTech",
+    brandName: "NaptuneTech",
+    shortName: "NaptuneTech",
+    tagline: "Building Smarter Solutions",
     positioning: "Modern Technology Consultancy",
-    philosophy: "Neptune helps businesses identify, design and build practical technology solutions — from AI and automation to custom software and product engineering.",
+    philosophy: "NaptuneTech helps businesses identify, design and build practical technology solutions — from AI and automation to custom software and product engineering.",
     lifecycle: "Understand → Diagnose → Design → Build → Validate → Scale",
-    email: "contact@neptuneitech.com",
+    email: "contact@naptunetech.com",
     establishedYear: 2026
   },
 
@@ -135,7 +135,7 @@ export const NEPTUNE_DATA: NeptuneCMS = {
   testimonials: [
     {
       id: "1",
-      quote: "Neptune delivered our domain-specific RAG knowledge assistant under strict NDA timelines. The retrieval precision and citation accuracy exceeded our highest expectations.",
+      quote: "NaptuneTech delivered our domain-specific RAG knowledge assistant under strict NDA timelines. The retrieval precision and citation accuracy exceeded our highest expectations.",
       author: "Enterprise Partner",
       role: "",
       company: "Healthcare Provider",
@@ -144,7 +144,7 @@ export const NEPTUNE_DATA: NeptuneCMS = {
     },
     {
       id: "2",
-      quote: "Instead of over-engineering, Neptune dug into our chaotic wholesale ordering workflow and automated verified invoice generation in seconds. Turnaround time dropped from hours to under 30 seconds.",
+      quote: "Instead of over-engineering, NaptuneTech dug into our chaotic wholesale ordering workflow and automated verified invoice generation in seconds. Turnaround time dropped from hours to under 30 seconds.",
       author: "Operations Partner",
       role: "",
       company: "Retail Distributor",
@@ -153,7 +153,7 @@ export const NEPTUNE_DATA: NeptuneCMS = {
     },
     {
       id: "3",
-      quote: "Working with Neptune feels like having a senior in-house CTO and principal engineering squad. Their transparency, code craftsmanship, and architectural clarity are unmatched.",
+      quote: "Working with NaptuneTech feels like having a senior in-house CTO and principal engineering squad. Their transparency, code craftsmanship, and architectural clarity are unmatched.",
       author: "Executive Partner",
       role: "",
       company: "Manufacturing Corp",
@@ -402,7 +402,7 @@ export const NEPTUNE_DATA: NeptuneCMS = {
   ],
 
   experience: {
-    heading: "Experience Behind Neptune",
+    heading: "Experience Behind NaptuneTech",
     disclaimer: "Selected Professional Experience / Experience Across Previous Engagements",
     note: "Our leadership team brings hands-on experience delivering technology products and complex solutions across high-growth startups and global enterprises.",
     items: [
@@ -452,7 +452,7 @@ export const NEPTUNE_DATA: NeptuneCMS = {
   ],
 
   about: {
-    whoWeAre: "NeptuneItech is a modern technology consultancy and product engineering company helping ambitious businesses turn operational and technical bottlenecks into scalable digital advantages.",
+    whoWeAre: "NaptuneTech is a modern technology consultancy and product engineering company helping ambitious businesses turn operational and technical bottlenecks into scalable digital advantages.",
     mission: "To eliminate operational bottlenecks by engineering robust, AI-driven digital ecosystems that scale seamlessly, empower teams to move faster, and turn complex data into immediate, actionable business value.",
     vision: "To become the definitive technology partner for modern enterprises, bridging the gap between cutting-edge artificial intelligence and practical, bulletproof software architecture that drives the next decade of digital transformation.",
     focusAreas: ["Web & Mobile Engineering", "Cloud Architecture", "AI & Business Automation", "Technology Consulting", "DevOps & CI/CD", "Data & Analytics"]

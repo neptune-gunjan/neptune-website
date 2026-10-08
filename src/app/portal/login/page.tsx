@@ -3,8 +3,8 @@ import { ArrowRight, Lock, ShieldCheck } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 
 export const metadata = {
-  title: "Client Portal Login | Neptune Consulting",
-  description: "Secure login for Neptune Consulting clients.",
+  title: "Client Portal Login | NaptuneTech",
+  description: "Secure login for NaptuneTech clients.",
 };
 
 export default function LoginPage() {

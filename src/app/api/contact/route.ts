@@ -30,7 +30,7 @@ export async function POST(req: Request) {
       to: process.env.SMTP_TO_EMAIL, // Your email address to receive leads
       subject: `New Consultation Request: ${company ? company : fullName} - ${service}`,
       text: `
-      New Consultation Request from Neptune Website:
+      New Consultation Request from NaptuneTech Website:
 
       Name: ${fullName}
       Email: ${email}
@@ -42,7 +42,7 @@ export async function POST(req: Request) {
       ${message}
       `,
       html: `
-        <h2>New Consultation Request from Neptune Website</h2>
+        <h2>New Consultation Request from NaptuneTech Website</h2>
         <p><strong>Name:</strong> ${fullName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Company:</strong> ${company || "N/A"}</p>
@@ -57,14 +57,14 @@ export async function POST(req: Request) {
     // Send the email
     await transporter.sendMail(mailOptions);
 
-    console.log("[Neptune Contact Route] Email sent successfully via SMTP.");
+    console.log("[NaptuneTech Contact Route] Email sent successfully via SMTP.");
 
     return NextResponse.json(
       { success: true, message: "Inquiry received successfully." },
       { status: 200 }
     );
   } catch (error) {
-    console.error("[Neptune Contact Route Error]:", error);
+    console.error("[NaptuneTech Contact Route Error]:", error);
     return NextResponse.json(
       { error: "Internal server error processing contact submission." },
       { status: 500 }

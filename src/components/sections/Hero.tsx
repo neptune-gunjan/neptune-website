@@ -86,10 +86,10 @@ export default function Hero() {
         >
           <Link
             href="/contact"
-            onClick={() => analytics.trackCtaClick("Talk to Neptune", "hero")}
+            onClick={() => analytics.trackCtaClick("Talk to NaptuneTech", "hero")}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-9 py-4 rounded-full font-bold text-base text-slate-950 bg-gradient-to-r from-cyan-400 via-sky-300 to-cyan-300 hover:opacity-95 transition-all duration-300 shadow-md dark:shadow-glow-blue hover:shadow-lg dark:hover:shadow-glow-aurora"
           >
-            <span>Talk to Neptune</span>
+            <span>Talk to NaptuneTech</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
           <a

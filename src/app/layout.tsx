@@ -14,11 +14,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://neptuneitech.com'),
-  title: "NeptuneItech | Custom Software & AI Engineering",
-  description: "Technology. Strategy. Solutions. Practical AI, custom enterprise software, and scalable cloud product engineering built around your business workflows.",
+  metadataBase: new URL('https://naptunetech.com'),
+  title: "NaptuneTech | Custom Software & AI Engineering",
+  description: "Building Smarter Solutions. Practical AI, custom enterprise software, and scalable cloud product engineering built around your business workflows.",
   keywords: [
-    "NeptuneItech",
+    "NaptuneTech",
+    "Building Smarter Solutions",
     "AI Automation",
     "Product Engineering",
     "Custom Software Development",
@@ -26,21 +27,22 @@ export const metadata: Metadata = {
     "Enterprise RAG",
     "SaaS Architecture"
   ],
-  authors: [{ name: "NeptuneItech" }],
+  authors: [{ name: "NaptuneTech" }],
   openGraph: {
-    title: "NeptuneItech | Technology Consulting + Product Engineering",
+    title: "NaptuneTech | Building Smarter Solutions",
     description: "We don't start with technology. We start with the problem. Explore practical AI, enterprise RAG, and custom software solutions.",
     type: "website",
     locale: "en_US",
-    siteName: "NeptuneItech",
+    siteName: "NaptuneTech",
   },
   twitter: {
     card: "summary_large_image",
-    title: "NeptuneItech | Custom Software & AI Engineering",
-    description: "Technology Consulting + Product Engineering. From concept to production.",
+    title: "NaptuneTech | Custom Software & AI Engineering",
+    description: "Building Smarter Solutions. From concept to production.",
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: "/logo.png",
+    apple: "/logo.png",
   },
 };
 

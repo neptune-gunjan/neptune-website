@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, ArrowRight, Sun, Moon } from "lucide-react";
 import { analytics } from "@/lib/analytics";
 import { useTheme } from "@/context/ThemeContext";
@@ -67,20 +68,23 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo / Brand */}
           <Link
-            href="#"
+            href="/"
             className="flex items-center gap-3 group focus:outline-none"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-600 p-[1.5px] shadow-sm dark:shadow-glow-blue group-hover:shadow-md dark:group-hover:shadow-glow-aurora transition-all">
-              <div className="w-full h-full bg-white dark:bg-[#09090b] rounded-[10px] flex items-center justify-center transition-colors">
-                <span className="font-display font-black text-xl text-transparent bg-clip-text bg-gradient-to-tr from-cyan-500 to-purple-500 group-hover:scale-110 transition-transform">
-                  N
-                </span>
-              </div>
+            <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-sm bg-white p-0.5 border border-slate-200/80 dark:border-white/10 group-hover:shadow-md dark:group-hover:shadow-glow-blue transition-all flex items-center justify-center">
+              <Image
+                src="/logo.png"
+                alt="NaptuneTech Logo"
+                width={40}
+                height={40}
+                className="w-full h-full object-contain group-hover:scale-105 transition-transform"
+                priority
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-display font-black text-xl tracking-tight">
-                <span className="text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">Neptune</span>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-indigo-500">Itech</span>
+                <span className="text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">Naptune</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600">Tech</span>
               </span>
             </div>
           </Link>
